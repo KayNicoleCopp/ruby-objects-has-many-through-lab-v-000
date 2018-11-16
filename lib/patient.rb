@@ -20,4 +20,8 @@ def doctors
   appointments.collect {|appointment| appointment.doctor}
 end
 
+def new_appointment(doctor, date)
+  appointment = Appointment.new(self, doctor, date)
+end
+
 end
