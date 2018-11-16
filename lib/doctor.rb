@@ -18,13 +18,13 @@ def appointments
 end
 
 def patients
-  binding.pry
   appointments.collect {|appointment| appointment.patient}
 end
 
 
 def new_appointment(date, patient)
   appointment = Appointment.new(patient, self, date)
+  binding.pry
 end
 
 end
