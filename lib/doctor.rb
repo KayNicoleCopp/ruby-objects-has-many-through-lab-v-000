@@ -22,7 +22,7 @@ end
 
 
 def new_appointment(date, patient)
-  appointment = Appointment.new(doctor, date)
+  appointment = Appointment.new(self, date)
 end
 
 end
