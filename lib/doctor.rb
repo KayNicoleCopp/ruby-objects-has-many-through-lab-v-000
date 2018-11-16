@@ -12,6 +12,10 @@ def self.all
   @@all
 end
 
+def appointments
+  Appointment.all.select {|appointment| appointment.doctor == self}
+end
+
 def new_appointment(date, patient)
   appointment = Appointment.new(doctor, date)
 end
